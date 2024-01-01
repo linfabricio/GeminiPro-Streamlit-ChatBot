@@ -1,6 +1,6 @@
 # Gemini Pro Chatbot with Streamlit
 
-[demo]
+
 https://github.com/koji/GeminiPro-Streamlit-ChatBot/assets/474225/5a2c807c-51c0-41ba-99ee-31c6ad968a69
 
 

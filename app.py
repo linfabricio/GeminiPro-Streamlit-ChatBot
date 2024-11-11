@@ -26,20 +26,6 @@ try:
     
     st.title('Gemini Admin Biblioteca')
 
-    # Crear tres columnas para los botones
-    col1, col2, col3 = st.columns(3)
-    
-    # Colocar un botón en cada columna
-    with col1:
-        if st.button("Iniciar Chat"):
-            st.write("Chat iniciado...")
-    with col2:
-        if st.button("Actualizar"):
-            st.write("Contenido actualizado.")
-    with col3:
-        if st.button("Ayuda"):
-            st.write("Información de ayuda.")
-
     def role_to_streamlit(role: str) -> str:
       if role == 'model':
         return 'assistant'

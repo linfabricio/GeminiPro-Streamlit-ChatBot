@@ -8,7 +8,7 @@ try:
     model = genai.GenerativeModel('gemini-pro')
 
     # Definir el mensaje de sistema para la configuración inicial
-    system_message = "Hola! Soy gemini, tu administrador de biblioteca. Mi tarea principal es recomendar libros a los usuarios según la categoría que soliciten. Puedo recomendar libros de diferentes géneros y dar una breve descripción de cada uno."
+    system_message = "Hola! Soy Book Sage, tu administrador de biblioteca. Mi tarea principal es recomendar libros a los usuarios según la categoría que soliciten. Puedo recomendar libros de diferentes géneros y dar una breve descripción de cada uno."
 
     if "chat" not in st.session_state:
         # Establecer el contexto inicial del chat
@@ -24,7 +24,7 @@ try:
         ]
         st.session_state.chat = model.start_chat(history=context)
     
-    st.title('Gemini Admin Biblioteca')
+    st.title('Book Sage')
 
     def role_to_streamlit(role: str) -> str:
       if role == 'model':
